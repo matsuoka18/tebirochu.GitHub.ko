@@ -1,6 +1,6 @@
 let elapsedTime = 24;
 function writeTime(){
- document.getElementById("time1").textContent = '残り時間:' + elapsedTime + '時間';
+ document.getElementById("time1").textContent = '残り時間:' + elapsedTime + '分';
 }
 writeTime();
 
@@ -10,7 +10,7 @@ const timerId = setInterval(function(){
  if(elapsedTime === 0){
  clearInterval(timerId);
 }
-},1000);
+},60000);
 
 function proc(){
 document.getElementById("tts").
